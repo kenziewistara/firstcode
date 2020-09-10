@@ -29,7 +29,7 @@
                 <input class="form-control form-control-solid text-monospace" id="telepon" name="telepon" type="tel" placeholder="08xxxxxxxxxx">
               </div>
               <div class="form-group">
-                <label for="exampleFormControlSelect1">Provider</label><select class="form-control form-control-solid custom-select text-monospace" name="provider" id="exampleFormControlSelect1">
+                <label for="exampleFormControlSelect1">Nama Provider</label><select class="form-control form-control-solid custom-select text-monospace" name="provider" id="exampleFormControlSelect1">
                   <option class="text-monospace" disabled selected>Pilih...</option>
                   <option class="text-monospace" value="Indosat">Indosat</option>
                   <option class="text-monospace" value="simPATI">simPATI</option>
@@ -38,7 +38,7 @@
                 </select>
               </div>
               <div class="form-group">
-                <label for="phone">Nominal</label>
+                <label for="phone">Nominal Pulsa</label>
                 <div>
                   <div class="custom-control custom-radio custom-control-solid custom-control-inline">
                     <input class="custom-control-input" id="radioSolid1" type="radio" name="nominal" value="5000" checked>
@@ -78,7 +78,7 @@
             <div class="list-group list-group-flush">
               <div class="d-flex align-items-center justify-content-between small">
                 <div class="mr-3 h4 font-weight-light text-monospace">
-                  Telepon
+                  Nomor Telepon
                 </div>
                 <div class="font-weight-500 text-dark h4 text-monospace">
                   <?php if (isset($telepon)) : ?>
@@ -91,7 +91,7 @@
               <br>
               <div class="d-flex align-items-center justify-content-between small">
                 <div class="mr-3 h4 font-weight-light text-monospace">
-                  Provider
+                  Nama Provider
                 </div>
                 <div class="font-weight-500 text-dark h4 text-monospace">
                   <?php if (isset($provider)) : ?>
@@ -104,7 +104,7 @@
               <br>
               <div class="d-flex align-items-center justify-content-between small">
                 <div class="mr-3 h4 font-weight-light text-monospace">
-                  Nominal
+                  Nominal Pulsa
                 </div>
                 <div class="font-weight-500 text-dark h4 text-monospace">
                   <?php if (isset($nominal)) : ?>
@@ -121,7 +121,7 @@
               <hr>
               <div class="d-flex align-items-center justify-content-between small">
                 <div class="mr-3 h4 text-black roboto">
-                  Harga
+                  Harga Total
                 </div>
                 <div class="font-weight-500 text-dark h4 roboto">
                   <?php if (isset($nominal)) : ?>

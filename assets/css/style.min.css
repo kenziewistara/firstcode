@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Poppins:wght@100;300;400;500&family=Roboto:wght@300;400;500;700&display=swap");
+
+html {
+	scroll-behavior: smooth;
+}
+
+.open-sans {
+	font-family: "Open Sans", sans-serif;
+}
+
+.poppins {
+	font-family: "Poppins", sans-serif;
+}
+
+.roboto {
+	font-family: "Roboto", sans-serif;
+}
+
+#back-to-top-btn {
+	display: none;
+	position: fixed;
+	z-index: 2;
+	bottom: 14px;
+	right: 20px;
+	font-size: 26px;
+	width: 50px;
+	height: 50px;
+	background-color: #fff;
+	color: #333;
+	cursor: pointer;
+	outline: none;
+	border: 3px solid #333;
+	border-radius: 50%;
+	transition-duration: 0.2s;
+	transition-timing-function: ease-in-out;
+	transition-property: background-color, color;
+}
+
+#back-to-top-btn:hover,
+#back-to-top-btn:focus {
+	background-color: #333;
+	color: #fff;
+}
+
+.btnEntrance {
+	animation-duration: 0.5s;
+	animation-fill-mode: both;
+	animation-name: btnEntrance;
+}
+
+#navbarDropdownUserImage {
+	visibility: visible !important;
+}
+
+main {
+	margin-top: 57px;
+}
+
+.panel {
+	border-radius: 0px !important;
+}
+
+#subHeader {
+	margin-top: 50px !important;
+}
+
+#featuresCard {
+	margin-top: 50px !important;
+}
+
+img.mr-auto {
+	width: 220px;
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+	#navbarDropdownUserImage {
+		visibility: hidden !important;
+	}
+
+	main {
+		margin-top: 57px;
+	}
+
+	.carousel-caption {
+		margin-bottom: 15rem;
+	}
+
+	.panel {
+		position: relative;
+		z-index: 1;
+		border-radius: 45px !important;
+		margin-top: -120px;
+	}
+
+	#subHeader {
+		margin-top: 50px !important;
+	}
+
+	#featuresCard {
+		margin-top: 50px !important;
+	}
+
+	#card {
+		border-radius: 40px;
+		transition: transform 600ms;
+	}
+
+	img.mr-auto {
+		width: 450px;
+	}
+
+	#card:hover {
+		-ms-transform: scale(1.1);
+		/* IE 9 */
+		-webkit-transform: scale(1.1);
+		/* Safari 3-8 */
+		transform: scale(1.1);
+	}
+}

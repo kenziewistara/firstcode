@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
     <link rel="stylesheet" href="<?= base_url('assets/css/style.min.css'); ?>">
     <link rel="stylesheet" href="<?= base_url('assets/css/bootstrap.min.css'); ?>">
-    <title>LandingPage</title>
+    <title>FirstCode</title>
     <link rel="shortcut icon" href="<?= base_url('assets/img/fav.ico'); ?>">
     <script data-search-pseudo-elements defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
@@ -21,7 +21,7 @@
     <header class="nav-fixed">
         <nav class="topnav navbar navbar-expand shadow navbar-light bg-white" id="sidenavAccordion">
             <div class="container">
-                <a class="navbar-brand text-lg poppins active" href="<?= base_url('/'); ?>">Landing<span class="font-weight-light text-primary">Page</span></a>
+                <a class="navbar-brand text-lg poppins active" href="<?= base_url('/'); ?>">First<span class="font-weight-light text-primary">Code</span></a>
 
                 <ul class="navbar-nav align-items-center ml-auto">
                     <li class="nav-item dropdown no-caret mr-2 dropdown-user">

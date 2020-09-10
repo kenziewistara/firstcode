@@ -23,7 +23,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = 'http://localhost/landingpage/'; // isi dengan url
+$config['base_url'] = 'https://kenziewistara.github.io/landingpage'; // isi dengan url
 
 /*
 |--------------------------------------------------------------------------

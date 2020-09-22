@@ -8,7 +8,7 @@
               <div class="page-header-icon"><i data-feather="slack"></i></div>
               BackEnd
             </h1>
-            <div class="page-header-subtitle">Halaman BackEnd Landingpage</div>
+            <div class="page-header-subtitle">Halaman BackEnd FirstCode</div>
           </div>
         </div>
       </div>
@@ -88,8 +88,7 @@
                   <?php endif; ?>
                 </div>
               </div>
-              <br>
-              <div class="d-flex align-items-center justify-content-between small">
+              <div class="d-flex align-items-center justify-content-between small mt-4">
                 <div class="mr-3 h4 font-weight-light text-monospace">
                   Nama Provider
                 </div>
@@ -101,8 +100,7 @@
                   <?php endif; ?>
                 </div>
               </div>
-              <br>
-              <div class="d-flex align-items-center justify-content-between small">
+              <div class="d-flex align-items-center justify-content-between small mt-4">
                 <div class="mr-3 h4 font-weight-light text-monospace">
                   Nominal Pulsa
                 </div>

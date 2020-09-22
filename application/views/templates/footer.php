@@ -1,7 +1,7 @@
 <footer class="footer mt-auto footer-light">
     <div class="container">
         <div class="row">
-            <div class="col-md-6 small">Copyright &#xA9; Kenzie 2020</div>
+            <div class="col-md-6 small">Copyright &#xA9; Kenzie</div>
             <div class="col-md-6 text-md-right small">
                 <a href="#">Privacy Policy</a>
                 ·
@@ -21,9 +21,9 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.14.0/jquery.validate.min.js"></script>
 
-<script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js" crossorigin="anonymous"></script>
+<!-- <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js" crossorigin="anonymous"></script>
 <script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js" crossorigin="anonymous"></script>
-<script src="<?= base_url('assets/js/datatables.js'); ?>"></script>
+<script src="<?//= base_url('assets/js/datatables.js'); ?>"></script> -->
 
 <script>
     feather.replace()

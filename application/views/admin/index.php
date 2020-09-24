@@ -26,16 +26,19 @@
             <form action="" method="POST" id="formPulsa">
               <div class="form-group">
                 <label for="telepon">Nomor Telepon</label>
-                <input class="form-control form-control-solid text-monospace" id="telepon" name="telepon" type="tel" placeholder="08xxxxxxxxxx">
+                <input class="form-control form-control-solid text-monospace <?= form_error('telepon', 'is-invalid ', ''); ?>" id="telepon" name="telepon" type="tel" placeholder="08xxxxxxxxxx">
+                <?= form_error('telepon', '<div class="text-danger text-monospace">', '</div>'); ?>
               </div>
               <div class="form-group">
-                <label for="exampleFormControlSelect1">Nama Provider</label><select class="form-control form-control-solid custom-select text-monospace" name="provider" id="exampleFormControlSelect1">
-                  <option class="text-monospace" disabled selected>Pilih...</option>
+                <label for="exampleFormControlSelect1">Nama Provider</label>
+                <select class="form-control form-control-solid custom-select text-monospace <?= form_error('provider', 'is-invalid ', ''); ?>" name="provider" id="exampleFormControlSelect1"">
+                  <option class=" text-monospace" disabled selected>Pilih...</option>
                   <option class="text-monospace" value="Indosat">Indosat</option>
                   <option class="text-monospace" value="simPATI">simPATI</option>
                   <option class="text-monospace" value="AXIS">AXIS</option>
                   <option class="text-monospace" value="Tri">Tri</option>
                 </select>
+                <?= form_error('provider', '<div class="text-danger text-monospace">', '</div>'); ?>
               </div>
               <div class="form-group">
                 <label for="phone">Nominal Pulsa</label>

@@ -17,126 +17,38 @@
   <!-- Main page content-->
   <div class="container mt-n10">
     <div class="row">
-      <div class="col-xxl-4 col-xl-6 mb-4">
-        <div class="card card-header-actions h-100">
-          <div class="card-header">
-            Aplikasi Pulsa
-          </div>
-          <div class="card-body">
-            <form action="" method="POST" id="formPulsa">
-              <div class="form-group">
-                <label for="telepon">Nomor Telepon</label>
-                <input class="form-control form-control-solid text-monospace <?= form_error('telepon', 'is-invalid ', ''); ?>" id="telepon" name="telepon" type="tel" placeholder="08xxxxxxxxxx">
-                <?= form_error('telepon', '<div class="text-danger text-monospace">', '</div>'); ?>
-              </div>
-              <div class="form-group">
-                <label for="exampleFormControlSelect1">Nama Provider</label>
-                <select class="form-control form-control-solid custom-select text-monospace <?= form_error('provider', 'is-invalid ', ''); ?>" name="provider" id="exampleFormControlSelect1"">
-                  <option class=" text-monospace" disabled selected>Pilih...</option>
-                  <option class="text-monospace" value="Indosat">Indosat</option>
-                  <option class="text-monospace" value="simPATI">simPATI</option>
-                  <option class="text-monospace" value="AXIS">AXIS</option>
-                  <option class="text-monospace" value="Tri">Tri</option>
-                </select>
-                <?= form_error('provider', '<div class="text-danger text-monospace">', '</div>'); ?>
-              </div>
-              <div class="form-group">
-                <label for="phone">Nominal Pulsa</label>
-                <div>
-                  <div class="custom-control custom-radio custom-control-solid custom-control-inline">
-                    <input class="custom-control-input" id="radioSolid1" type="radio" name="nominal" value="5000" checked>
-                    <label class="custom-control-label text-monospace" for="radioSolid1">5.000</label>
-                  </div>
-                  <div class="custom-control custom-radio custom-control-solid custom-control-inline">
-                    <input class="custom-control-input" id="radioSolid2" type="radio" name="nominal" value="10000">
-                    <label class="custom-control-label text-monospace" for="radioSolid2">10.000</label>
-                  </div>
-                  <div class="custom-control custom-radio custom-control-solid custom-control-inline">
-                    <input class="custom-control-input" id="radioSolid3" type="radio" name="nominal" value="25000">
-                    <label class="custom-control-label text-monospace" for="radioSolid3">25.000</label>
-                  </div>
-                  <div class="custom-control custom-radio custom-control-solid custom-control-inline">
-                    <input class="custom-control-input" id="radioSolid4" type="radio" name="nominal" value="50000">
-                    <label class="custom-control-label text-monospace" for="radioSolid4">50.000</label>
-                  </div>
-                  <div class="custom-control custom-radio custom-control-solid custom-control-inline">
-                    <input class="custom-control-input" id="radioSolid5" type="radio" name="nominal" value="100000">
-                    <label class="custom-control-label text-monospace" for="radioSolid5">100.000</label>
-                  </div>
+      <div class="col-xxl-4 col-xl-12 mb-4">
+        <div class="card h-100">
+          <div class="card-body h-100 d-flex flex-column justify-content-center py-5 py-xl-4">
+            <div class="row align-items-center">
+              <div class="col-xl-8 col-xxl-12">
+                <div class="text-center px-4 mb-4 mb-xl-0 mb-xxl-4">
+                  <h1 class="text-primary">Selamat datang!</h1>
+                  <p class="text-gray-700 mb-0">Cobalah beberapa aplikasi yang ada di FirstCode.</p>
                 </div>
               </div>
-              <div class="text-right">
-                <button class="btn btn-primary" type="submit">Kirim</button>
-              </div>
-            </form>
+              <div class="col-xl-4 col-xxl-12 text-center"><img class="img-fluid" src="<?= base_url('assets/img/features/at-work-pana.svg'); ?>" style="max-width: 26rem;" /></div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="col-xxl-4 col-xl-6 mb-4">
-        <div class="card card-header-actions h-100">
-          <div class="card-header">
-            Struk Pembelian Pulsa
-          </div>
+    </div>
+    <!-- Example Colored Cards for Dashboard Demo-->
+    <div class="row">
+      <div class="col-xxl-3 col-lg-6">
+        <div class="card bg-warning text-white mb-4">
           <div class="card-body">
-            <div class="list-group list-group-flush">
-              <div class="d-flex align-items-center justify-content-between small">
-                <div class="mr-3 h4 font-weight-light text-monospace">
-                  Nomor Telepon
-                </div>
-                <div class="font-weight-500 text-dark h4 text-monospace">
-                  <?php if (isset($telepon)) : ?>
-                    <?= $telepon; ?>
-                  <?php else : ?>
-                    -
-                  <?php endif; ?>
-                </div>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="mr-3">
+                <div class="text-white-75 small">Indosat, simPATI, AXIS, Tri</div>
+                <div class="text-lg font-weight-bold">Aplikasi Pulsa</div>
               </div>
-              <div class="d-flex align-items-center justify-content-between small mt-4">
-                <div class="mr-3 h4 font-weight-light text-monospace">
-                  Nama Provider
-                </div>
-                <div class="font-weight-500 text-dark h4 text-monospace">
-                  <?php if (isset($provider)) : ?>
-                    <?= $provider; ?>
-                  <?php else : ?>
-                    -
-                  <?php endif; ?>
-                </div>
-              </div>
-              <div class="d-flex align-items-center justify-content-between small mt-4">
-                <div class="mr-3 h4 font-weight-light text-monospace">
-                  Nominal Pulsa
-                </div>
-                <div class="font-weight-500 text-dark h4 text-monospace">
-                  <?php if (isset($nominal)) : ?>
-                    <?= number_format($nominal, 0, ',', '.'); ?>
-                  <?php else : ?>
-                    -
-                  <?php endif; ?>
-                </div>
-              </div>
-              <hr>
-              <hr>
-              <hr>
-              <div class="border-top text-black"></div>
-              <hr>
-              <div class="d-flex align-items-center justify-content-between small">
-                <div class="mr-3 h4 text-black roboto">
-                  Harga Total
-                </div>
-                <div class="font-weight-500 text-dark h4 roboto">
-                  <?php if (isset($nominal)) : ?>
-                    <?php if ($nominal == 5000 || $nominal == 10000) : ?>
-                      Rp<?= number_format(($nominal + ($nominal * (10 / 100))), 0, ',', '.'); ?>
-                    <?php elseif ($nominal == 25000 || $nominal == 50000 || $nominal == 100000) : ?>
-                      Rp<?= number_format(($nominal + ($nominal * (5 / 100))), 0, ',', '.'); ?>
-                    <?php endif; ?>
-                  <?php else : ?>
-                    -
-                  <?php endif; ?>
-                </div>
-              </div>
+              <i class="feather-xl text-white-50" data-feather="phone"></i>
             </div>
+          </div>
+          <div class="card-footer d-flex align-items-center justify-content-between">
+            <a class="small text-white stretched-link" href="<?= base_url('admin/pulsa'); ?>">Lihat</a>
+            <div class="small text-white"><i class="fas fa-angle-right"></i></div>
           </div>
         </div>
       </div>

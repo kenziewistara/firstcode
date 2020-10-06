@@ -22,7 +22,6 @@
         <nav class="topnav navbar navbar-expand shadow navbar-light bg-white" id="sidenavAccordion">
             <div class="container">
                 <a class="navbar-brand text-lg poppins active" href="<?= base_url('/'); ?>">First<span class="font-weight-light text-primary">Code</span></a>
-
                 <ul class="navbar-nav align-items-center ml-auto">
                     <li class="nav-item dropdown no-caret mr-2 dropdown-user">
                         <a class="btn btn-icon btn-transparent-dark order-1 order-lg-0 mr-lg-2" id="navbarDropdownUserImage" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i data-feather="menu"></i></a>
